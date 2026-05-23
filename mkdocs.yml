@@ -55,6 +55,8 @@ nav:
   - Examples:
       - Basic Usage: examples/basic.md
       - MCP Server: examples/mcp.md
+  - Releases:
+      - v0.1.0: releases/v0.1.0.md
   - Changelog: changelog.md
 
 extra:

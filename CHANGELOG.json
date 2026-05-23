@@ -1,0 +1,53 @@
+{
+  "irVersion": "1.0",
+  "project": "omnitoken",
+  "repository": "https://github.com/plexusone/omnitoken",
+  "versioning": "semver",
+  "commitConvention": "conventional",
+  "maintainers": ["grokify", "johncwang@gmail.com"],
+  "releases": [
+    {
+      "version": "v0.1.0",
+      "date": "2026-05-23",
+      "commit": "94709a7",
+      "highlights": [
+        { "description": "Initial release of OmniToken SDK" },
+        { "description": "Bridge goauth credentials with vault-based storage via omnivault" },
+        { "description": "Full token lifecycle management with automatic refresh" }
+      ],
+      "added": [
+        { "description": "Core `TokenManager` for credential and token lifecycle operations", "commit": "6ec300f" },
+        { "description": "`CredentialsStore` implementing vault-backed goauth credential storage", "commit": "8486113" },
+        { "description": "`VaultTokenSet` implementing goauth `tokens.TokenSet` interface", "commit": "ca103f8" },
+        { "description": "`Config` struct with validation and sensible defaults", "commit": "fa0d0a3" },
+        { "description": "Error types: `ErrCredentialsNotFound`, `ErrTokenNotFound`, `ErrTokenExpired`, `ErrRefreshFailed`", "commit": "fa0d0a3" },
+        { "description": "Convenience constructor `NewFromVaultURI` for vault URI initialization", "commit": "1a1e070" },
+        { "description": "Convenience constructor `NewFromCredentialsFile` for loading goauth CredentialsSet files", "commit": "1a1e070" },
+        { "description": "Convenience constructor `NewFromCredentialsSet` for in-memory CredentialsSet", "commit": "1a1e070" },
+        { "description": "Convenience constructor `NewFromCredentials` for single credential initialization", "commit": "1a1e070" },
+        { "description": "Convenience constructor `NewFromEnv` for environment variable configuration", "commit": "1a1e070" },
+        { "description": "Convenience constructor `NewFromDirectory` for loading credentials from directory", "commit": "1a1e070" },
+        { "description": "Support for OAuth2 credentials (client credentials, authorization code)", "commit": "8486113" },
+        { "description": "Support for JWT bearer token credentials", "commit": "8486113" },
+        { "description": "Support for HTTP Basic Auth credentials", "commit": "8486113" },
+        { "description": "Support for custom header/query authentication", "commit": "8486113" },
+        { "description": "Support for Google Cloud service account credentials", "commit": "8486113" },
+        { "description": "Automatic token refresh with configurable buffer time", "commit": "6ec300f" },
+        { "description": "Background token refresh for long-running applications", "commit": "6ec300f" }
+      ],
+      "documentation": [
+        { "description": "API reference documentation", "commit": "50bdf5d" },
+        { "description": "Quick start guide with examples", "commit": "50bdf5d" },
+        { "description": "Credential sources reference", "commit": "50bdf5d" },
+        { "description": "MCP server integration guide", "commit": "50bdf5d" },
+        { "description": "Basic usage example", "commit": "230fc16" },
+        { "description": "MCP server example with ToolContext pattern", "commit": "230fc16" }
+      ],
+      "tests": [
+        { "description": "Unit tests for TokenManager lifecycle operations", "commit": "7e0a0d2" },
+        { "description": "Unit tests for VaultTokenSet persistence", "commit": "7e0a0d2" },
+        { "description": "Unit tests for convenience constructors", "commit": "7e0a0d2" }
+      ]
+    }
+  ]
+}
