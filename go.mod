@@ -5,7 +5,7 @@ go 1.26.0
 require (
 	github.com/grokify/goauth v0.23.30
 	github.com/plexusone/omnivault v0.5.0
-	golang.org/x/oauth2 v0.36.0
+	golang.org/x/oauth2 v0.37.0
 )
 
 require (
